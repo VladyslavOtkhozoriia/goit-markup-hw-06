@@ -47,6 +47,8 @@
     width: 1200px;
     padding: 0 15px;
     margin: auto;
+
+    /* outline: 2px solid; */
     }
 
 /***************************************************/
@@ -254,8 +256,16 @@
     
 .address_footer-box{
     margin-right: 70px;
+
+    min-width: 231px;
+    /* outline: 2px solid red; */
     }
       
+/* .slogan-section {
+    outline: 2px solid red;
+} */
+
+
 .footer-box{
     display: flex ;
     align-items: baseline;
@@ -269,7 +279,7 @@
     display: inline-block;
     }
     
-.address_footer_item_links_kiev{
+.kiev{
     font-family:'Roboto', sans-serif;
     font-style: normal;
     font-weight:  400;
@@ -332,7 +342,19 @@
     height: 20px; 
     transition: var(--animation-fill);
     }
-        
+
+
+.address_footer_item_links{
+    transition: var(--animation-color);
+    }
+    
+
+.address_footer_item .address_footer_item_links:hover ,
+ .address_footer_item .address_footer_item_links:focus{
+    color: var(--accent-color);
+ } 
+
+
 .social_links-footer:hover ,
 .social_links-footer:focus {
     background-color:var(--accent-color);
@@ -621,8 +643,7 @@ background-size: contain;
 background-origin: border-box;
 border-color: var(--accent-color);
 }
-    
-   
+      
 .accept-checkbox{
 display: flex;
 align-items: center;
